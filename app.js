@@ -16,7 +16,8 @@ const getTemp = () => {
 
 /**
  * 温度情報を文字列変換+Cを追加
- * @param {number} temp 
+ * @param {number} temp
+ * @param {string}
  */
 const temp2digit = (temp) =>{
     let temp_str = `${temp}`;
@@ -39,8 +40,8 @@ const fourDigitPoint = (display) => {
 
 /**
  * ディスプレイに表示させる
- * @param {number} start_pos 
- * @param {string} chars 
+ * @param {number} start_pos
+ * @param {string} chars
  */
 const fourDigit = (start_pos, chars) => {
     const ENDPOINT = `/Grove4DigitUART0/display_digits/${start_pos}/${chars}`;
@@ -69,4 +70,3 @@ setInterval(()=>{
         if(e.response) console.log(e.response);
     })
 },INTERVAL);
-
