@@ -14,7 +14,7 @@ git clone git@github.com:dotstudio/wionode_handson.git
 git clone git@github.com:dotstudio/wionode_handson.git <任意のディレクトリ名>
 ```
 
-## Node.jsのインストール（v7.6.0以上）
+## Node.jsのインストール（最新版を！執筆時はv7.9.0）
 ### nvmを使う
 参考: https://liginc.co.jp/web/programming/node-js/85318
 
