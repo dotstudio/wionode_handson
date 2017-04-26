@@ -1,35 +1,34 @@
-## gitのインストール（入っていない場合）
-### Macの場合
+## ソースコードを手元にコピーする
+### 方法1. git clone
+gitが入っていない場合はインストールから
+#### Macの場合
 参考: https://dotstud.io/blog/setup-new-mac-app/#git
 
-### Windowsの場合
+#### Windowsの場合
 参考: http://qiita.com/taipon_rock/items/632c117220e57d555099
 
-## プロジェクトをクローン
+#### git cloneを実行
+実行した場所にwionode_hanson-masterというディレクトリが作成されます
 ```
-// プロジェクトを作りたいディレクトリで
 git clone git@github.com:dotstudio/wionode_handson.git
+```
 
-// 任意のディレクトリ名をつける場合は以下
+任意のディレクトリ名をつけたい場合は以下
+```
 git clone git@github.com:dotstudio/wionode_handson.git <任意のディレクトリ名>
 ```
 
-## Node.jsのインストール（最新版を！執筆時はv7.9.0）
-### nvmを使う
-参考: https://liginc.co.jp/web/programming/node-js/85318
+### 方法2. zipでダウンロード
+ダウンロード後解答、作業ディレクトリにコピーする
 
-### nodebrewを使う
-参考: https://dotstud.io/blog/setup-new-mac-app/#node-js%E7%92%B0%E5%A2%83%E6%95%B4%E5%82%99
-
-## インストール
-
+## パッケージのインストール
+コピーしたディレクトリのapp.jsがある場所で以下を実行
 ```
-cd wionode_handson // もしくは「cd 任意のディレクトリ名」
 npm i
 ```
 
 ## プログラムを実行
 
 ```
-node app.js <TOKEN>
+node app.js <自分のTOKEN>
 ```
